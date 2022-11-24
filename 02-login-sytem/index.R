@@ -2,11 +2,11 @@ library(shiny)
 library(shinyjs)
 library(glue)
 
-
 # load password
 source('password.R') 
-
-
+source('tab_login.R') 
+source('tab_dash1.R') 
+source('tab_dash2.R') 
 
 # ui (user interface)
 
