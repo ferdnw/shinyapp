@@ -12,8 +12,8 @@ server <- function(input, output) {
 
   rv <- reactiveValues(data = rnorm(100))
 
-  observeEvent(input$norm, { rv$data <- rnorm(100) })
-  observeEvent(input$unif, { rv$data <- runif(100) })
+  observeEvent(input$norm, { rv$data <- rnorm(10000) })
+  observeEvent(input$unif, { rv$data <- runif(10000) })
 
   output$hist <- renderPlot({ 
     hist(rv$data) 

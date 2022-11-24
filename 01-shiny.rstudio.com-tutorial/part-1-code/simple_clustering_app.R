@@ -10,11 +10,11 @@ palette(c("#E41A1C", "#377EB8", "#4DAF4A", "#984EA3",
 ui <- fluidPage(
   headerPanel('Iris k-means clustering'),
   sidebarPanel(
-    selectInput('xcol', 'X Variable', names(iris)),
-    selectInput('ycol', 'Y Variable', names(select_if(iris, is.numeric)),
+    selectInput('xcol', 'Pilih Variable X', names(select_if(iris, is.numeric))),
+    selectInput('ycol', 'Pilih Variable Y', names(select_if(iris, is.numeric)),
       selected = names(iris)[[2]]),
     numericInput('clusters', 'Cluster count', 3,
-      min = 1, max = 5)
+      min = 1, max = 10)
   ),
   mainPanel(
     plotOutput('plot1')
