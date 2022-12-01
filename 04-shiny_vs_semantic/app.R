@@ -1,6 +1,6 @@
 library(shiny)
-library(shinydashboard)      # <-- Change this line to: library(semantic.dashboard)
-#library(semantic.dashboard)
+#library(shinydashboard)      # <-- Change this line to: library(semantic.dashboard)
+library(semantic.dashboard)
 
 ui <- dashboardPage(
     dashboardHeader(title = "Basic dashboard"),

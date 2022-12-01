@@ -23,14 +23,14 @@ my_custom_sign_in_page <- sign_in_ui_default(
   logo_top = tags$img(
     src = "Picture2.png",
     alt = "D`Sciencelabs Logo",
-    style = "width: 130px; margin-top: 30px; margin-bottom: 30px;"
+    style = "width: 100px; margin-top: 10px; margin-bottom: 10px;"
   ),
   logo_bottom = tags$img(
     src = "bottom-logo.png",
     alt = "D`Sciencelabs Logo",
-    style = "width: 130px; margin-bottom: 15px; padding-top: 15px;"
+    style = "width: 100px; margin-bottom: 10px; padding-top: 10px;"
   ),
-  icon_href = "https://github.com/dsciencelabs/shiny_app/blob/main/03-shiny_crud/03_traditional_polished/shiny_app/www/background.jpg",
+  icon_href = "background.jpg",
   background_image = "background"
 )
 

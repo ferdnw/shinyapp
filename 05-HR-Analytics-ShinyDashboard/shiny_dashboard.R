@@ -17,7 +17,7 @@ library(DBI)
 #setwd("Users/anushka/Desktop/tydy intern/codes")
 dat<-read.csv("Watson_Analytics.csv",header = TRUE,stringsAsFactors = TRUE)
 
-ui<-dashboardPage(skin="blue",
+ui<-dashboardPage(
   dashboardHeader(title="Employee Analytics"),
   dashboardSidebar(sidebarMenu(
                      menuItem("Raw Data", tabName = "raw", icon = icon("database")),
@@ -38,7 +38,6 @@ ui<-dashboardPage(skin="blue",
               ),
       tabItem(tabName = "dash",
               fluidRow(
-                h2("HR Dashboard"),
                 box(width=6,plotOutput("plot1",height = 300),collapsible = T),
                 box(width=6,plotOutput("plot2",height = 300),collapsible = T)
               ),
@@ -56,7 +55,6 @@ ui<-dashboardPage(skin="blue",
       ),
       tabItem(tabName = "att",
               fluidRow(
-                h2("Attrition Dashboard"),
                 box(width=6,plotOutput("plot7",height = 300),collapsible = T),
                 box(width=6,plotOutput("plot8",height = 300),collapsible = T)
               ),
