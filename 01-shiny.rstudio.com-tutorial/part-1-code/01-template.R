@@ -2,7 +2,8 @@ library(shiny)
 ui <- fluidPage(
   
   # Application title
-  titlePanel("SB21 dashboard"),
+  titlePanel("BAIM POKEK
+             "),
   
   # Sidebar with a slider input for number of bins
   sidebarLayout(
